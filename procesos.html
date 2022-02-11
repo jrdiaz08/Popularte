@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta name="descripcion" content="Manual de procesos">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>App de gestion</title>
+        <link rel="stylesheet" href="estilos.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <section id="loader" >
+            <div id="espacio">
+            </div>
+            <div id="icono">
+            </div>
+        </section>
+        <section id="fondoGrande">
+            <section>
+            <header >
+                <a href="index.html"><img  class="marca" src="Marca.png" alt="Logo Popularte"></a>
+                <div class="titulo">Manual de procesos</div>
+                </header>  
+            </section>  
+            <section>
+                <br>
+                <table class="tablaProcesos">
+                    <tr>
+                        
+                        <th colspan="3">Listado de productos</th>
+                    </tr>     
+                    <tr>
+                        <th class="boton1" id="cuadroTriplex" onclick="insertar1()">Cuadro madera de triplex 9mm</th>
+                        <th class="boton1" id="cuadroPino" onclick="insertar1()">Cuadro madera de pino 18mm</th>
+                        <th class="boton1" id="cuadroEstibas" onclick="insertar1()">Cuadro madera de estibas</th>   
+                    </tr> 
+                    <tr>
+                        <th class="boton1" id="ViniloDecorativo" onclick="insertar1()">Vinilo decorativo</th>
+                        <th class="boton1" id="cuadroTronco" onclick="insertar1()">Cuadro rodaja de tronco</th>
+                        <th class="boton1" id="libretaTriplex" onclick="insertar1()">Libreta madera de triplex 3mm</th>    
+                    </tr> 
+                    <tr><th class="boton1" id="cajaTriplex" onclick="insertar1()">Caja madera de triplex 9mm</th>
+                        <th class="boton1" id="cojinTerciopelo" onclick="insertar1()">Cojín terciopelo</th>
+                        <th class="boton1" id="llaveroMadera" onclick="insertar1()">Llavero madera</th> 
+                    </tr> 
+                    <tr>
+                        <th class="boton1" id="cajaMdf" onclick="insertar1()">Caja MDF de 3mm</th>
+                        <th class="boton1" id="jardineraCubo" onclick="insertar1()">Jardinera cubo de madera</th>
+                        <th class="boton1" id="relojTronco" onclick="insertar1()">Reloj rodaja de tronco</th>   
+                    </tr>
+                    <tr><th class="boton1" id="llaveroTextil" onclick="insertar1()">Llavero textil</th>
+                        <th ></th>
+                        <th class="boton1" id="soporteCelular" onclick="insertar1()">Soporte celular</th>    
+                    </tr> 
+                    <tr>
+                        <th colspan="3"  id="imgListadoDeProducto"></th>
+                    </tr>
+                </table>
+                <br>
+                <table class="tablaProcesos">
+                    <tr>
+                        <th colspan="3">Division de procesos</th>
+                    </tr>  
+                    <tr>    
+                        <th colspan="3"><br>Personal ventas y diseño</th>
+                    </tr>    
+                    <tr>
+                        <th class="boton2" id="tomaDePedidos" onclick="insertar2()">Toma de pedidos</th>
+                        <th class="boton2" id="cotizacion" onclick="insertar2()">Cotizacion</th>
+                        <th class="boton2" id="edicion" onclick="insertar2()">Edicion</th>
+                    </tr> 
+                    <tr>
+                        <th class="boton2" id="embalaje" onclick="insertar2()">Embalaje</th>
+                        <th class="boton2" id="promocion" onclick="insertar2()">Promocion</th>
+                        <th class="boton2" id="fotografia" onclick="insertar2()">Fotografia</th> 
+                    </tr> 
+                    <tr>
+                        <th colspan="3" id="imgPersonalVentas"></th>
+                    </tr>
+                    <br>   
+                    <tr>
+                        <th colspan="3"><br>Personal operativo</th>
+                    </tr>   
+                    <tr>
+                        <th class="boton3">Cortado</th>
+                        <th class="boton3">Grabado</th>
+                        <th class="boton3">Acabados</th>
+                    </tr> 
+                    <tr>
+                        <th class="boton3">Medicion</th>
+                        <th class="boton3">Tratado corteza</th>
+                        <th class="boton3">Marcado</th> 
+                    </tr> 
+                    <tr>
+                        <th class="boton3">Armado</th>
+                        <th class="boton3">Agujereado</th>
+                        <th class="boton3">Plantado</th> 
+                    </tr> 
+                    <tr>
+                        <th class="boton3">Recortado</th>
+                        <th class="boton3">Encuadernar</th>
+                        <th class="boton3">Perforado</th> 
+                    </tr> 
+                    <tr>
+                        <th class="boton3">Costura</th>
+                        <th class="boton3">Planchado</th>
+                        <th class="boton3">Relojeria</th> 
+                    </tr> 
+                    <tr>
+                        <th class="boton3">Compra insumos</th>
+                        <th class="boton3">Mantenimientos</th>
+                        <th class="boton3">Limpieza taller</th> 
+                    </tr> 
+                    <tr>
+                        <td colspan="3"></td>   
+                    </tr> 
+                    
+                    <tr>
+                        <th colspan="3"><br>Personal apoyo</th>
+                    </tr>   
+                    <tr>
+                        <th class="boton4">Lijado 150</th>
+                        <th class="boton4">Inmunizado</th>
+                        <th class="boton4">Sellado</th>
+                    </tr> 
+                    <tr>
+                        <th class="boton4">Lijado 40</th>
+                        <th class="boton4">Barnizado</th>
+                        <th class="boton4">Lijado 400</th>
+                    </tr> 
+                    <tr>
+                        <th class="boton4">Seleccion</th>
+                        <th class="boton4">Rellenado</th>
+                        <th class="boton4">Quitar excesos</th>
+                    </tr>
+                    <tr>
+                        <th class="boton4">Argollar</th>
+                        <th class="boton4">Encuadernar</th>
+                        <th class="boton4">Despegar</th>
+                    </tr>
+                    <tr>
+                        <th class="boton4">Preparacion inmunizante</th>
+                        <th class="boton4">Preparacion sellador</th>
+                        <th class="boton4">Preparacion de barniz</th>
+                    </tr>    
+                </table>
+                <br>    
+            </section> 
+        </section>
+        <footer class="final">
+           POPULARTE 2020 Version 1.0 ♦ Diseñado por: Jose Diaz ♦
+        </footer>
+
+    </body>
+</html>

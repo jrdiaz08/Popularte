@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta name="descripcion" content="Cotizador">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Cotizador</title>
+        <link rel="stylesheet" href="estilos.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <section id="loader" >
+            <div id="espacio">
+            </div>
+            <div id="icono">
+            </div>
+        </section>
+        <section id="fondoPequeño">
+            <form class="tablaCotizador" action="javascript:void(0);">
+                <header >
+                    <a href="index.html"><img  class="marca" src="Marca.png" alt="Logo Popularte"></a>
+                </header>
+                <section id="Renglon">
+                    <div class="cotizador">Cotizador</div><div class="mediano">Fecha: <script>fecha();</script></div>
+                </section>
+                <section id="Renglon">
+                    <label for="cliente" class="pequeño">Cliente</label><input type="text" id="cliente" class="grande">
+                </section>   
+                <section id="Renglon">
+                    <label for="descripcion" class="pequeño">Descripcion</label><input type="text" id="descripcion" class="grande">
+                </section>
+                <section id="Renglon">
+                    <label for="producto" class="pequeño">Producto</label><select id="producto" class="grande">
+                        <option selected disabled hidden style='display: none' value="138" id="valorMinuto"></option>
+                        <option selected disabled hidden style='display: none' value="49" id="valorArea"></option>
+                        <option selected disabled hidden style='display: none' value="13.70" id="gastoCnc"></option>
+                        <option selected disabled hidden style='display: none' value="0.36" id="tiempo/area"></option>
+                        <option value="7.11" id="cuadroMaderaDeTriplex9mm">Cuadro madera de triplex 9mm</option>
+                        <option value="17.69" id="cuadroMaderaDePino18mm">Cuadro madera de pino 18mm</option>
+                        <option value="6.76" id="cuadroMaderaDeestibas">Cuadro madera de estibas</option>
+                        <option value="4.48" id="ViniloDecorativo">Vinilo decorativo</option>
+                        <option value="10.58" id="cuadroRojadaDeTronco">Cuadro rodaja de tronco</option>
+                        <option value="6.70" id="cajaMdfDe3mm">Caja MDF de 3mm</option>
+                        <option value="21.37" id="cajaMaderaDeTriplex9mm">Caja madera de triplex 9mm</option>
+                        <option value="5.82" id="cojinTerciopelo">Cojín terciopelo</option>
+                        <option value="75.87" id="LlaveroMaderaTextil">Llavero madera/textil</option>
+                        <option value="76.08" id="jardineraCuboDeMadera">Jardinera cubo de madera</option>
+                        <option value="17.55" id="relojRodajaDeTronco">Reloj rodaja de tronco</option>
+                        <option value="26.08" id="libretaMaderaDeTriplex3mm">Libreta madera de triplex 3mm</option>
+                        <option value="20.21" id="soporteCelular">Soporte celular</option>
+                        <option value="3.14" id="cuadroMdf3mm">Cuadro MDF 3mm</option>
+                        <option value="2.87" id="clienteAportaMaterial">Cliente aporta material</option>
+                        <option value="0.0" id="grabadoAdicional">Grabado adicional</option>
+                    </select>
+                </section>   
+                <section id="Renglon">
+                    <label for="cantidad" class="pequeño">Cantidad</label><input type="tel" id="cantidad" class="pequeño" style="width: 12%;">
+                    <label for="escala" class="pequeño">Relacion</label>
+                    <input class="pequeñito" type="radio" id="escala_0" name="escala" value="otro" checked>
+                    <label class="pequeñito">libre</label>
+                    <input class="pequeñito" type="radio" id="escala_1" name="escala" value="1:1">
+                    <label class="pequeñito">1:1</label>
+                    <input class="pequeñito" type="radio" id="escala_2" name="escala" value="4:3">
+                    <label class="pequeñito">4:3</label>
+                    <input class="pequeñito" type="radio" id="escala_3" name="escala" value="16:9">
+                    <label class="pequeñito">16:9</label>
+                </section> 
+                <section id="Renglon">
+                    <label for="tamaño" class="pequeño">Tamaño</label><input type="range" min="1" max="60" value="1" id="tamaño" class="grande" oninput="barra()">
+                </section>  
+                <section id="Renglon">
+                    <label for="alto" class="pequeño">Alto</label><input type="tel" id="alto" class="pequeño">
+                    <label for="ancho" class="pequeño">Ancho</label><input type="tel" id="ancho" class="pequeño">
+                </section>  
+                <section id="Renglon">
+                    <label for="horas" class="pequeño">Horas</label><input type="tel" id="horas" class="pequeño">
+                    <label for="minutos" class="pequeño">Minutos</label><input type="tel" id="minutos" class="pequeño">
+                </section>  
+                <section id="Renglon">
+                    <button class="opciones" onclick="generar()">Generar</button>
+                    <label for="valor" class="cotizador">Valor</label><input type="text" id="valor" placeholder="$" class="total">
+                </section> 
+                <section id="fila">
+                   <div class="pequeñito" onclick="datos()" id="flecha">↓</div>
+                   <table id="tablaDatos" >
+                   </table>
+                </section> 
+
+             </form>
+        </section>
+        <footer class="final">
+           POPULARTE 2020 Version 1.0 ♦ Diseñado por: Jose Diaz ♦
+        </footer>
+
+    </body>
+</html>
