@@ -39,7 +39,7 @@ const CACHE_NAME = 'v1_cache_pendulo',
     'https://jrdiaz08.github.io/Popularte/llaveroMadera.png',
     'https://jrdiaz08.github.io/Popularte/llaveroTextil.png',
     'https://jrdiaz08.github.io/Popularte/logo.png',
-    'https://jrdiaz08.github.io/Popularte/manifest.json',
+
     'https://jrdiaz08.github.io/Popularte/Marca.png',
     'https://jrdiaz08.github.io/Popularte/muestra1.png',
     'https://jrdiaz08.github.io/Popularte/muestra2.png',
@@ -59,7 +59,7 @@ const CACHE_NAME = 'v1_cache_pendulo',
     'https://jrdiaz08.github.io/Popularte/relojTronco.png',
     'https://jrdiaz08.github.io/Popularte/script.js',
     'https://jrdiaz08.github.io/Popularte/soporteCelular.png',
-    'https://jrdiaz08.github.io/Popularte/sw.js',
+
     'https://jrdiaz08.github.io/Popularte/tomaDePedidos.png',
     'https://jrdiaz08.github.io/Popularte/viniloDecorativo.png',
 ]
