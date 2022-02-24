@@ -329,7 +329,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
     margin: auto;/*centra el contenido*/
 }
 .final{ /*afecta a la seccion final*/
-    font-size: 2vw; /*tamaño de letra*/
+    font-size: 3vw; /*tamaño de letra*/
     height: 30px; /*define una altura de 30px a la caja*/
     border-top: solid 1px black; /*colorea solo el border superior de la caja*/
 }
