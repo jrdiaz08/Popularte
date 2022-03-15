@@ -60,7 +60,7 @@ const CACHE_NAME = 'v1_cache_pendulo',
     'https://jrdiaz08.github.io/Popularte/script.js',
     'https://jrdiaz08.github.io/Popularte/serviceWorker.js',
     'https://jrdiaz08.github.io/Popularte/soporteCelular.png',
-    'https://jrdiaz08.github.io/Popularte/sw.js',
+
     'https://jrdiaz08.github.io/Popularte/tomaDePedidos.png',
     'https://jrdiaz08.github.io/Popularte/viniloDecorativo.png',
 ]
