@@ -1,6 +1,6 @@
 
 //asignar un nombre y versión al cache
-const CACHE_NAME = 'v1_cache_pendulo',
+const CACHE_NAME = 'cache_popularte',
   urlsToCache = [
     './',
     'https://jrdiaz08.github.io/Popularte/activos.html',
