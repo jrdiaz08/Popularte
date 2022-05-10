@@ -32,6 +32,13 @@ const CACHE_NAME = 'cache_popularte',
     'https://jrdiaz08.github.io/Popularte/icono192x192.png',
     'https://jrdiaz08.github.io/Popularte/icono512x512.png',
     'https://jrdiaz08.github.io/Popularte/index.html',
+    'https://jrdiaz08.github.io/Popularte/insumos.html',
+    'https://jrdiaz08.github.io/Popularte/inventarios.html',
+    'https://jrdiaz08.github.io/Popularte/jardineraCubo.png',
+    'https://jrdiaz08.github.io/Popularte/libretaTriplex.png',
+    'https://jrdiaz08.github.io/Popularte/llaveroMadera.png',
+    'https://jrdiaz08.github.io/Popularte/llaveroTextil.png',
+    'https://jrdiaz08.github.io/Popularte/logo.png',
 ]
 
 //durante la fase de instalación, generalmente se almacena en caché los activos estáticos
