@@ -138,7 +138,7 @@ function generar(){ // inicia la funcion al presionar el boton generar
     var precio80 = totalCostosGastos/0.2; // se obtiene el precio para tener un 80% de utilidad
     var precioMinuto = tiempo*valorMinuto*cantidad; // se obtiene el precio segun el tiempo de grabado
     var precioArea = area*valorArea*cantidad; // se obtiene el precio segun el area de grabado
-    var precioVenta = (precioMinuto*0.4)+(precioArea*0.3)+(precio80*0.3) // se obtiene el precio final segun las propociones de los otros precios
+    var precioVenta = (precioMinuto*0.3)+(precioArea*0.3)+(precio80*0.4) // se obtiene el precio final segun las propociones de los otros precios
     if (isNaN(precioVenta)){ // condicional que se cumple si no se ingresaron todos los datos necesarios
         document.getElementById("valor").value="$"+0 // el precio de venta toma un valor de cero
     }else{ // condicional que se cumple si se ingresaron todos los datos necesarios
